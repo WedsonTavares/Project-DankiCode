@@ -358,6 +358,9 @@ footer {
   }
 
   .menu-mobile {
+    opacity: 0;
+
+    transition: 1s;
     position: absolute;
     left: 0;
     top: 50px;
@@ -365,11 +368,19 @@ footer {
     padding: 20px 0;
   }
 
+  .show {
+    opacity: 1;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
   .menu-mobile a {
     display: block;
     text-align: center;
     margin: 10px 0;
-    color: rgb(40,40,40);
+    color: rgb(40, 40, 40);
     text-decoration: none;
     font-weight: bold;
   }
