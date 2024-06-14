@@ -52,6 +52,7 @@ section.main {
   padding: 10px 10px;
   border-radius: 10px;
 }
+
 .itens-menu a.contact-btn:hover {
   border: 0;
 }
@@ -87,17 +88,17 @@ section.porque-nos {
   background-color: #fbfcfe;
 }
 
-section.porque-nos > .center > h2 {
+section.porque-nos>.center>h2 {
   font-size: 64px;
   text-align: center;
   width: 100%;
 }
 
-section.porque-nos > .center {
+section.porque-nos>.center {
   max-width: 1280px;
 }
 
-section.porque-nos > .center > p {
+section.porque-nos>.center>p {
   font-size: 16px;
   color: #abaaaa;
   text-align: center;
@@ -192,6 +193,7 @@ section.beneficios {
   vertical-align: middle;
   width: 70px;
 }
+
 .img-beneficios {
   width: 60%;
 }
@@ -205,7 +207,7 @@ section.depoimentos {
   padding: 40px 0;
 }
 
-section.depoimentos > h1 {
+section.depoimentos>h1 {
   text-align: center;
   font-size: 50px;
 }
@@ -283,6 +285,7 @@ section.contato {
   padding: 40px 0;
   text-align: center;
 }
+
 section.contato form {
   width: 100%;
 }
@@ -297,6 +300,7 @@ section.contato form {
   border: 1px solid #c3cce8;
   padding-left: 10px;
 }
+
 .contato textarea {
   width: 100%;
   height: 120px;
@@ -330,27 +334,50 @@ footer {
   color: white;
   padding: 10px 0;
 }
+
 .text-footer {
   width: 20%;
   padding: 8px 0;
 }
+
 .itens-menu-mobile {
   display: none;
 }
+
 .itens-menu-mobile i {
   color: white;
   font-size: 23px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 768px) {
   .itens-menu-mobile {
     display: block;
     width: 50%;
     text-align: right;
   }
+
+  .menu-mobile {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .menu-mobile a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: rgb(40,40,40);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
   section.main .itens-menu {
     display: none;
   }
+
   footer .itens-menu a {
     display: block;
     text-align: center;
@@ -361,6 +388,7 @@ footer {
     width: 100%;
     text-align: center;
   }
+
   .text-footer {
     width: 100%;
     text-align: center;
@@ -371,19 +399,22 @@ footer {
     width: 100%;
     margin-bottom: 30px;
   }
+
   .diferenciais {
     flex-wrap: wrap;
   }
+
   .box-diferenciais {
     width: 100%;
     margin-right: 0;
   }
 
-  section.marcas > .center {
+  section.marcas>.center {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
   }
+
   section.marcas img {
     max-width: 300px;
     width: 100%;
